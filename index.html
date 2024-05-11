@@ -13,8 +13,8 @@
     .phone-contact {
         position: fixed;
         bottom: 20px; /* Adjust as needed */
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         background-color: green; /* Green color for WhatsApp */
         color: white;
@@ -80,7 +80,7 @@
 	<section class="fh5co-top-banner">
 		<div class="top-banner__inner site-container">
 			<div class="top-banner__image">
-				<img src="./images/top-banner-author.jpg" alt="author image">
+				<img src="./images/Paulvin.png" alt="author image">
 			</div>
 			<div class="top-banner__text">
 				<div class="top-banner__text-up">
@@ -103,21 +103,21 @@
 		<div class="about-me-inner site-container">
 			<article class="portfolio-wrapper">
 				<div class="portfolio__img">
-					<img src="./images/about-me.jpg" class="about-me__profile" alt="about me profile picture">
+					<img src="./images/paul.png" class="about-me__profile" alt="about me profile picture">
 				</div>
 				<div class="portfolio__bottom">
 					<div class="portfolio__name">
 						<span>P</span>
 						<h2 class="universal-h2">aulvin Kurian</h2>
 					</div>
-					<p>Jhone Smith is a short story author, novelist, and award-winning poet.</p>
+					<!-- <p>Jhone Smith is a short story author, novelist, and award-winning poet.</p> -->
 				</div>
 			</article>
 			<div class="about-me__text">
 				<div class="about-me-slider">
 					<div class="about-me-single-slide">
 						<h2 class="universal-h2 universal-h2-bckg">About me</h2>
-						<p><span>W</span> ith four years of experience specializing in accounting, auditing, taxation, and payroll for diverse  
+						<p><span>W</span> ith 5+ years of experience specializing in accounting, auditing, taxation, and payroll for diverse  
 							organizations, I possess extensive knowledge of VAT, Corporate Tax, and Tally. My aim is to enhance  
 							organizational success through precise leveraging of strong analytical skills and meticulous attention  
 							to detail.</p>
@@ -136,24 +136,25 @@
 		<div class="site-container">
 			<h2 class="universal-h2 universal-h2-bckg">Services Offered 	</h2>
 			<div class="books">
-				<div class="single-book">
+
+
+				<div class="single-book" onclick="showSweetAlertVat()">
 					<a href="#" class="single-book__img">
-						<img src="./images/PAYROLL_1.png" alt="single book and cd">
+						<img src="./images/VAT.png" alt="single book and cd">
 						<div class="single-book_download">
-							<img src="./images/download.svg" alt="book image">
+							
 						</div>
 					</a>
-					<h4 class="single-book__title">Payroll Management</h4>
+					<h4 class="single-book__title">VAT Consultation</h4>
 					
-					<!-- star rating -->
-					
-					<!-- star rating end -->
 				</div>
-				<div class="single-book">
+
+
+				<div class="single-book" onclick="showSweetAlertTax()">
 					<a href="#" class="single-book__img">
 						<img src="./images/Coparate tax.png" alt="single book and cd">
 						<div class="single-book_download">
-							<img src="./images/download.svg" alt="book image">
+							
 						</div>
 					</a>
 					<h4 class="single-book__title">Corporate tax consultation </h4>
@@ -162,30 +163,60 @@
 					
 					<!-- star rating end -->
 				</div>
+
+				<div class="single-book" onclick="showSweetAlertAccountsbookkeeping()">
+					<a href="#" class="single-book__img">
+						<img src="./images/bookeeping.png" alt="single book and cd">
+						<div class="single-book_download">
+							
+						</div>
+					</a>
+					<h4 class="single-book__title">Accounting & Bookkeeping</h4>
+					
+					<!-- star rating -->
+					
+					<!-- star rating end -->
+				</div>
+
+				<div class="single-book"  onclick="showSweetAlertAudit()">
+					<a href="#" class="single-book__img">
+						<img src="./images/Audit.png" alt="single book and cd">
+						<div class="single-book_download">
+							
+						</div>
+					</a>
+					<h4 class="single-book__title">Audit Assistance</h4>
+					
+				</div>
+				
+				<div class="single-book" onclick="showSweetAlertAccounts()">
+					<a href="#" class="single-book__img">
+						<img src="./images/Accounts report.png" alt="single book and cd">
+						<div class="single-book_download">
+							
+						</div>
+					</a>
+					<h4 class="single-book__title">Accounts Report</h4>
+					
+				</div>
+
 				<div class="single-book">
 					<a href="#" class="single-book__img">
-						<img src="./images/SOTWARE.png" alt="single book and cd">
+						<img src="./images/sottware.png" alt="single book and cd">
 						<div class="single-book_download">
-							<img src="./images/download.svg" alt="book image">
+							
 						</div>
 					</a>
 					<h4 class="single-book__title">Accounting Software Solution</h4>
 					
 				</div>
-				<div class="single-book">
-					<a href="#" class="single-book__img">
-						<img src="./images/VAT.png" alt="single book and cd">
-						<div class="single-book_download">
-							<img src="./images/download.svg" alt="book image">
-						</div>
-					</a>
-					<h4 class="single-book__title">VAT Consultation</h4>
-					
-				</div>
+
+
+				
 			</div>
-			<div class="books-brand-button">
+			<!-- <div class="books-brand-button">
 				<a href="#" class="brand-button">View more</a>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<!-- Books and CD end -->
@@ -218,7 +249,7 @@
 	<!-- Quotes end -->
 
 	<!-- Social -->
-	<section class="fh5co-social">
+	<!-- <section class="fh5co-social">
 		<div class="site-container">
 			<div class="social">
 				<h5>Follow me!!</h5>
@@ -231,7 +262,7 @@
 				<h5>Share it!</h5>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- Social -->
 
 	<!-- Footer -->
@@ -245,14 +276,14 @@
 					</div> -->
 					<div class="footer-info__right">
 						<h5 >Get In Touch</h5>
-						<p class="footer-phone">Phone: +958734902847</p>
-						<p>Email : Jhone@Example.com</p>
-						<div class="social-icons">
+						<p class="footer-phone">Phone: +971-508869323</p>
+						<p>Email : paulvinkurian8281@outlook.com</p>
+						<!-- <div class="social-icons">
 							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
 							<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
 							<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
 							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<!-- <div class="footer-contact-form">
@@ -269,16 +300,7 @@
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<div class="site-container footer-bottom-inner">
-				<p>© 2019 Author | Design by <a href="https://freehtml5.co/" target="_blank">freehtml5.co</a> | All rights Reserved.</p>
-				<div class="footer-bottom__img">
-					<img src="./images/footer-mastercard.png" alt="footer image">
-					<img src="./images/footer-paypal.png" alt="footer image">
-					<img src="./images/footer-visa.png" alt="footer image">
-					<img src="./images/footer-fedex.png" alt="footer image">
-					<img src="./images/footer-dhl.png" alt="footer image">
-				</div>
-			</div>
+			
 		</div>
 	</footer>
 	<!-- Footer end -->
@@ -289,9 +311,88 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
+	<!-- SweetAlert script -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function showSweetAlertVat() {
+        Swal.fire({
+            title: 'VAT consultation',
+            html: '<ul style="text-align: left; padding-left: 20px;"><li style="margin-bottom: 10px;">VAT registration</li><li style="margin-bottom: 10px;">VAT filing</li><li style="margin-bottom: 10px;">VAT refunding</li><li style="margin-bottom: 10px;">Managing the VAT transaction process</li><li style="margin-bottom: 10px;">VAT de-registration</li></ul>',
+            confirmButtonText: 'OK',
+            icon: 'success'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Action to perform when OK button is clicked
+                // In this case, do nothing as we just want to close the SweetAlert
+            }
+        });
+    }
+</script>
 
+<script>
+    function showSweetAlertAccounts () {
+        Swal.fire({
+            title: 'Accounts Report',
+            html: '<ul style="text-align: left; padding-left: 20px;"><li style="margin-bottom: 10px;">Daily/Weekly/Monthly/Yearly book keeping </li><li style="margin-bottom: 10px;">Trading account and profit and loss account </li><li style="margin-bottom: 10px;">Balance sheet </li><li style="margin-bottom: 10px;">Detailed schedule report </li><li style="margin-bottom: 10px;">Cash inflow and  cash outflow </li></ul>',
+            confirmButtonText: 'OK',
+            icon: 'success'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Action to perform when OK button is clicked
+                // In this case, do nothing as we just want to close the SweetAlert
+            }
+        });
+    }
+</script>
+
+<script>
+    function showSweetAlertAccountsbookkeeping  () {
+        Swal.fire({
+            title: 'Accounting & Bookkeeping',
+            html: '<ul style="text-align: left; padding-left: 20px;"><li style="margin-bottom: 10px;">Accounts consultation</li><li style="margin-bottom: 10px;">Accounts adjustment</li><li style="margin-bottom: 10px;">Control and Cash Flow Management</li><li style="margin-bottom: 10px;">Updating of Backlog Accounts</li><li style="margin-bottom: 10px;">Accounts Reconciliation </li></ul>',
+            confirmButtonText: 'OK',
+            icon: 'success'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Action to perform when OK button is clicked
+                // In this case, do nothing as we just want to close the SweetAlert
+            }
+        });
+    }
+</script>
+
+<script>
+    function showSweetAlertTax() {
+        Swal.fire({
+            title: 'Corporate Tax Consultation',
+            html: '<ul style="text-align: left; padding-left: 20px;"><li style="margin-bottom: 10px;">Corporate tax registration </li><li style="margin-bottom: 10px;">Corporate tax filing </li></ul>',
+            confirmButtonText: 'OK',
+            icon: 'success'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Action to perform when OK button is clicked
+                // In this case, do nothing as we just want to close the SweetAlert
+            }
+        });
+    }
+</script>
+
+<script>
+    function showSweetAlertAudit() {
+        Swal.fire({
+            title: 'Audit Assistance',
+            html: '<ul style="text-align: left; padding-left: 20px;"><li style="margin-bottom: 10px;">External Audit </li><li style="margin-bottom: 10px;">Internal Audit </li></ul>',
+            confirmButtonText: 'OK',
+            icon: 'success'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Action to perform when OK button is clicked
+                // In this case, do nothing as we just want to close the SweetAlert
+            }
+        });
+    }
+</script>
 	
-
 
 </body>
 </html>
